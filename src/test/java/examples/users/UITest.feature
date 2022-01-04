@@ -2,7 +2,7 @@ Feature: browser automation 1
 
 Background:
 	* def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { browserName: 'chrome' } }
-	* configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: 'http://<username>:<key>@hub.lambdatest.com/wd/hub' }
+	* configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: '#(hub)' }
 	# * configure driver = { type: 'chromedriver', start: false, webDriverUrl: 'http://localhost:4444/wd/hub' }
   # * configure driver = { type: 'chrome', showDriverLog: true }
   # * configure driverTarget = { docker: 'justinribeiro/chrome-headless', showDriverLog: true }

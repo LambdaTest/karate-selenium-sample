@@ -6,7 +6,7 @@ function fn() {
   }
   var config = {
     env: env,
-	myVarName: 'someValue'
+	  hub: karate.properties['hub']
   }
   if (env == 'dev') {
     // customize
