@@ -33,6 +33,7 @@ Set LambdaTest Username and Access Key in environment variables.
 
 ### Update Capabilities
 Open `src/test/java/examples/users/UITest.feature`
+
 Add/remove capabilities from feature file
 ```
  def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { browserName: 'chrome' } }
