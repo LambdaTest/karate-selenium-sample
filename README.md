@@ -1,8 +1,6 @@
 
 # Karate Selenium Sample
 
-mvn test -Dhub=https://$LT_USERNAME:$LT_ACCESS_KEY@hub.lambdatest.com/wd/hub
-
 ### Environment Setup
 
 1. Global Dependencies
