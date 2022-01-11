@@ -22,15 +22,23 @@
 Set LambdaTest Username and Access Key in environment variables.
 
 * For Linux/macOS:
-`export LT_USERNAME="YOUR_USERNAME"
-export LT_ACCESS_KEY="YOUR ACCESS KEY"`
+   `export LT_USERNAME="YOUR_USERNAME"
+   
+   export LT_ACCESS_KEY="YOUR ACCESS KEY"`
 
 * For Windows:
-`set LT_USERNAME="YOUR_USERNAME"
-set LT_ACCESS_KEY="YOUR ACCESS KEY"`
+   `set LT_USERNAME="YOUR_USERNAME"
+
+   set LT_ACCESS_KEY="YOUR ACCESS KEY"`
+
+### Update Capabilities
+Open `src/test/java/examples/users/UITest.feature`
+Add/remove capabilities from feature file
+```
+ def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { browserName: 'chrome' } }
+```
     
 ### Running Tests
-
 ```
     $ mvn test -Dhub=https://$LT_USERNAME:$LT_ACCESS_KEY@hub.lambdatest.com/wd/hub
 ```
