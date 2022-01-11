@@ -3,14 +3,6 @@ Feature: browser automation 1
 Background:
 	* def session = { capabilities: { browserName: 'chrome' }, desiredCapabilities: { browserName: 'chrome' } }
 	* configure driver = { type: 'chromedriver', webDriverSession: '#(session)', start: false, webDriverUrl: '#(hub)' }
-	# * configure driver = { type: 'chromedriver', start: false, webDriverUrl: 'http://localhost:4444/wd/hub' }
-  # * configure driver = { type: 'chrome', showDriverLog: true }
-  # * configure driverTarget = { docker: 'justinribeiro/chrome-headless', showDriverLog: true }
-  # * configure driverTarget = { docker: 'ptrthomas/karate-chrome', showDriverLog: true }
-  # * configure driver = { type: 'chromedriver', showDriverLog: true }
-  # * configure driver = { type: 'geckodriver', showDriverLog: true }
-  # * configure driver = { type: 'safaridriver', showDriverLog: true }
-  # * configure driver = { type: 'iedriver', showDriverLog: true, httpConfig: { readTimeout: 120000 } }
 
 Scenario: try to login to github
     and then do a google search
