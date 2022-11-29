@@ -16,4 +16,4 @@ Scenario: try to login to github
   Given driver 'https://google.com'
   And input("input[name=q]", 'karate dsl')
   When submit().click("input[name=btnI]")
-  Then waitForUrl('https://github.com/intuit/karate')
+  Then match html('[itemprop=name] a') contains 'karate'
