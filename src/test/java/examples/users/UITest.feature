@@ -14,6 +14,6 @@ Scenario: try to login to github
   Then match html('#js-flash-container') contains 'Incorrect username or password.'
   
   Given driver 'https://google.com'
-  And input("input[name=q]", 'karate dsl')
+  And input("textArea[class=gLFyf]", 'karate dsl')
   When submit().click("input[name=btnI]")
   Then match html('[itemprop=name] a') contains 'karate'
