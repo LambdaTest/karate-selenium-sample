@@ -13,7 +13,7 @@ Scenario: try to login to github
   When submit().click("input[name=commit]")
   Then match html('#js-flash-container') contains 'Incorrect username or password.'
   
-  Given driver 'https://google.com'
-  And input("textArea[class=gLFyf]", 'karate dsl')
-  When submit().click("input[name=btnI]")
-  Then match html('[itemprop=name] a') contains 'karate'
+  Given driver 'https://duckduckgo.com'
+  And input("input[name=q]", 'google')
+  When submit().click("button[type=submit]")
+  Then match html('h2[class=Ee2e63EzQ9F3xq9wsGDY]') contains 'Google'
