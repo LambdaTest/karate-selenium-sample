@@ -17,10 +17,10 @@ With TestMu AI (Formerly LambdaTest), you can run Karate Selenium tests across r
 
 ### Prerequisites
 
-1. [Maven](https://maven.apache.org/install.html) installed (or via [Homebrew](http://brew.sh/)).
+1. Maven installed (or via Homebrew).
 2. JDK 8 installed.
-3. A TestMu AI account — [sign up here](https://www.testmuai.com/register/).
-4. Your TestMu AI Username and Access Key from the [Automation Dashboard](https://automation.testmuai.com/).
+3. A TestMu AI account — sign up here.
+4. Your TestMu AI Username and Access Key from the Automation Dashboard.
 
 ### Setup
 
